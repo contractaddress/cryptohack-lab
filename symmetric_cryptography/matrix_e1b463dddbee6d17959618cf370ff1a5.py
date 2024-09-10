@@ -1,3 +1,11 @@
+'''
+
+Included is a bytes2matrix function for converting our initial plaintext block into a state matrix.
+Write a matrix2bytes function to turn that matrix back into bytes,
+and submit the resulting plaintext as the flag.
+
+'''
+
 def bytes2matrix(text):
     """ Converts a 16-byte array into a 4x4 matrix.  """
     return [list(text[i:i+4]) for i in range(0, len(text), 4)]
